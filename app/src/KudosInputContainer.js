@@ -1,4 +1,4 @@
-import MyComponent from "./MyComponent";
+import KudosInput from "./components/KudosInput";
 import { drizzleConnect } from "drizzle-react";
 
 const mapStateToProps = state => {
@@ -9,6 +9,6 @@ const mapStateToProps = state => {
   };
 };
 
-const MyContainer = drizzleConnect(MyComponent, mapStateToProps);
+const KudosInputContainer = drizzleConnect(KudosInput, mapStateToProps);
 
-export default MyContainer;
+export default KudosInputContainer;
