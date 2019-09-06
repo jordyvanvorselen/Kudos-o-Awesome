@@ -18,16 +18,11 @@ export default ({ accounts }) => (
     </div>
 
     <div className="section">
-      <h2>SimpleStorage</h2>
       <p>
-        This shows a simple ContractData component with no arguments, along with
-        a form to set its value.
+        <strong>Total of Kudos given: </strong>
+        <ContractData contract="KudoStorage" method="totalKudos" />
       </p>
-      <p>
-        <strong>Stored Value: </strong>
-        <ContractData contract="SimpleStorage" method="storedData" />
-      </p>
-      <ContractForm contract="SimpleStorage" method="set" />
+      <ContractForm contract="KudoStorage" method="giveKudos" />
     </div>
   </div>
 );

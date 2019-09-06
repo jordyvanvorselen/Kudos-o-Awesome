@@ -1,5 +1,5 @@
-const SimpleStorage = artifacts.require("SimpleStorage");
+const KudoStorage = artifacts.require("KudoStorage");
 
 module.exports = function(deployer) {
-  deployer.deploy(SimpleStorage);
+  deployer.deploy(KudoStorage);
 };
