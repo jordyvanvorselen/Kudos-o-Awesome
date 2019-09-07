@@ -8,7 +8,7 @@ contract TestKudoStorage {
     function testCanGiveKudos() public {
       KudoStorage simpleStorage = KudoStorage(DeployedAddresses.KudoStorage());
 
-      simpleStorage.giveKudos(50);
+      simpleStorage.giveKudos(50, address(1));
 
       uint expected = 50;
       
