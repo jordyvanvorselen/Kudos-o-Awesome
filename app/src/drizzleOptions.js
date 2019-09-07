@@ -1,16 +1,16 @@
-import KudoStorage from "./contracts/KudoStorage.json";
+import KudoStorage from './contracts/KudoStorage.json';
 
 const options = {
   web3: {
     block: false,
     fallback: {
-      type: "ws",
-      url: "ws://127.0.0.1:8545",
+      type: 'ws',
+      url: 'ws://127.0.0.1:8545',
     },
   },
   contracts: [KudoStorage],
   events: {
-    KudoStorage: ["KudosGiven"],
+    KudoStorage: ['KudosGiven'],
   },
   polls: {
     accounts: 1500,

@@ -1,8 +1,5 @@
-import React from "react";
-import {
-  ContractData,
-  ContractForm,
-} from "drizzle-react-components";
+import React from 'react';
+import {ContractData, ContractForm} from 'drizzle-react-components';
 
 export default () => (
   <div className="kudos-input">
@@ -11,7 +8,11 @@ export default () => (
         <strong>Total of Kudos given: </strong>
         <ContractData contract="KudoStorage" method="totalKudos" />
       </p>
-      <ContractForm contract="KudoStorage" method="giveKudos" sendArgs={{gas: 1000000}} />
+      <ContractForm
+        contract="KudoStorage"
+        method="giveKudos"
+        sendArgs={{gas: 1000000}}
+      />
     </div>
   </div>
 );

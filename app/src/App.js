@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import { DrizzleProvider } from "drizzle-react";
-import { LoadingContainer } from "drizzle-react-components";
+import React, {Component} from 'react';
+import {DrizzleProvider} from 'drizzle-react';
+import {LoadingContainer} from 'drizzle-react-components';
 
-import "./App.css";
+import './App.css';
 
-import drizzleOptions from "./drizzleOptions";
-import MainContainer from "./MainContainer";
+import drizzleOptions from './drizzleOptions';
+import MainContainer from './MainContainer';
 
 class App extends Component {
   render() {
