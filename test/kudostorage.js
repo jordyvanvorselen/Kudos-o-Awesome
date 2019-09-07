@@ -9,7 +9,7 @@ contract("KudoStorage", accounts => {
 
   context("if kudos are given", () => {
     before(async () => {
-      await kudoStorage.giveKudos(50, accounts[1], { from: accounts[0] });
+      await kudoStorage.giveKudos(50, accounts[1], "because it's awesome", { from: accounts[0] });
     })
 
     it("total amount of kudos are incremented", async () => {
@@ -32,6 +32,7 @@ contract("KudoStorage", accounts => {
       assert.equal(kudoTx.sender, accounts[0]);
       assert.equal(kudoTx.receiver, accounts[1]);
       assert.equal(kudoTx.amount, 50);
+      assert.equal(kudoTx.message, "because it's awesome");
     });
   })
 });
