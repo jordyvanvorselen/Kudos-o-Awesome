@@ -10,7 +10,7 @@ const options = {
   },
   contracts: [KudoStorage],
   events: {
-    KudoStorage: ["StorageSet"],
+    KudoStorage: ["KudosGiven"],
   },
   polls: {
     accounts: 1500,
